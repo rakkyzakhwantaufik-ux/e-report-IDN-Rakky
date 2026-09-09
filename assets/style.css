@@ -3,3 +3,33 @@
 body {
    font-family: 'Inter', sans-serif;
 }
+
+/* Hero Section */
+.hero .col img{
+   width: 500px;
+}
+
+
+section{
+   padding-top: 100px;
+   padding-bottom: 50px;
+}
+
+.about .col img{
+   width: 76%;
+}
+
+#about .col img{
+   width: 70%;
+}
+
+@media screen {
+   .hero .col img{
+      width: 100%;
+   }
+
+   #about .col img{
+      width: 80%;
+   }
+}
+
