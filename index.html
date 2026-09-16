@@ -15,13 +15,20 @@
 
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- smooth scroll -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary-subtle py-4">
+    <nav class="navbar navbar-expand-lg bg-primary-subtle py-4 sticky-top">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="#hero">
                 <img src="./assets/images/idn.png" alt="Logo" width="40" class="d-inline-block align-text-top">
                 <span class="fw-bold text-primary-emphasis">E-report IDN</span>
             </a>
@@ -33,27 +40,27 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto gap-3 pt-4 pt-lg-0 text-center">
                     <li class="nav-item">
-                        <a class="nav-link text-primary" aria-current="page" href="#">Home</a>
+                        <a class="nav-link text-primary" aria-current="page" href="#hero">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary" href="#">About</a>
+                        <a class="nav-link text-primary" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary" href="#">Services</a>
+                        <a class="nav-link text-primary" href="#recent">Recent</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary" aria-disabled="true">Recent</a>
+                        <a class="nav-link text-primary" href="#faq">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary" aria-disabled="true">FAQ</a>
+                        <a class="nav-link text-primary" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-   <!-- Hero section -->
-    <section id="hero">
+    <!-- Hero section -->
+    <section id="hero" class="pt-5">
       <div class="container">
         <div
           class="hero row align-items-center gap-5 flex-nowrap flex-column flex-lg-row text-center text-lg-start"
@@ -70,8 +77,8 @@
               earum.
             </p>
             <div class="mt-4">
-              <a class="btn btn-primary" href="">About Us</a>
-              <a class="btn btn-outline-primary" href="">Let's Start</a>
+              <a class="btn btn-primary" href="#about">About Us</a>
+              <a class="btn btn-outline-primary" href="#recent">Let's Start</a>
             </div>
           </div>
           <div class="col d-flex justify-content-center justify-content-lg-end">
@@ -82,7 +89,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="pt-5">
       <div class="container">
         <div class="about row">
           <div class="col text-center">
@@ -98,8 +105,8 @@
       </div>
     </section>
 
-    <!-- Services Section -->
-   <section id="recent">
+    <!-- Recent Section -->
+    <section id="recent" class="pt-5">
       <div class="container">
         <div class="text-end mb-5">
           <h1 class="fw-bold text-primary">Latest Report</h1>
@@ -116,7 +123,7 @@
               <img style="height: 400px;" src="./assets/images/kelas kotor.jpg" class="card-img-top" alt="kelas-kotor" />
               <div class="card-body">
                 <h5 class="card-title">Report A Dirty Class</h5>
-                <p class="mb-4">By: <a class="text-decoration-none" href="">Rakky</a> 2 days ago</p>
+                <p class="mb-4">By: <a class="text-decoration-none" href="#">Rakky</a> 2 days ago</p>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the cards content.
@@ -131,7 +138,7 @@
               <img style="height: 400px;" src="./assets/images/kelas kotor.jpg" class="card-img-top" alt="kelas-kotor" />
               <div class="card-body">
                 <h5 class="card-title">Report A Dirty Mosque</h5>
-                <p class="mb-4">By: <a class="text-decoration-none" href="">Rakky</a> 2 days ago</p>
+                <p class="mb-4">By: <a class="text-decoration-none" href="#">Rakky</a> 2 days ago</p>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the cards content.
@@ -146,7 +153,7 @@
               <img style="height: 400px;" src="./assets/images/kelas kotor.jpg" class="card-img-top" alt="kelas-kotor" />
               <div class="card-body">
                 <h5 class="card-title">Report A Dirty Class</h5>
-                <p class="mb-4">By: <a class="text-decoration-none" href="">Rakky</a> 2 days ago</p>
+                <p class="mb-4">By: <a class="text-decoration-none" href="#">Rakky</a> 2 days ago</p>
                 <p class="card-text">
                   Some quick example text to build on the card title and make up
                   the bulk of the cards content.
@@ -156,28 +163,41 @@
             </div>
           </div>
         </div>
+
+        <!-- Tulisan Lebih Banyak di Tengah + Garis Bawah + Panah Kanan -->
+        <div class="row my-5">
+          <div class="col-12 d-flex justify-content-center">
+            <ul class="nav nav-underline fs-5 fw-semibold">
+              <li class="nav-item">
+                <a class="nav-link text-primary d-flex align-items-center gap-2" href="#">
+                  Lihat Lebih Banyak <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
       </div>
     </section>
 
     <!-- FAQ Section -->
-      <section>
+    <section id="faq" class="pt-5">
       <div class="container">
-        <div class="row">
-          <h1>FAQ</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis laborum est aspernatur. Maiores, id et! Quod ea commodi rerum.</p>
+        <div class="row mb-4">
+          <h1 class="text-center text-primary">FAQ</h1>
+          <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit corporis laborum est aspernatur. Maiores, id et! Quod ea commodi rerum.</p>
         </div>
         <div class="accordion" id="accordionExample">
-          <div class="row row row-cols-1 row-cols-md-2 g-4">
+          <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
                 <div class="accordion-item">
                   <h2 class="accordion-header">
                     <button class="accordion-button bg-primary text-white" type="button" data-bs-toggle="collapse"
-                      data-bs-target="FAQ2" aria-expanded="true" aria-controls="FAQ2">
+                      data-bs-target="#FAQ1" aria-expanded="true" aria-controls="FAQ1">
                       Apa itu E-report IDN?
                     </button>
                   </h2>
-                  <div id="FAQ2" class="accordion-collapse " aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample">
+                  <div id="FAQ1" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       E-report IDN adalah sebuah platform yang memungkinkan pengguna untuk melaporkan masalah atau kejadian tertentu secara online. Platform ini dirancang untuk mempermudah proses pelaporan dan memastikan bahwa laporan dapat ditangani dengan cepat dan efisien.
                     </div>
@@ -187,13 +207,12 @@
             <div class="col">
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button class="accordion-button bg-primary text-white " type="button" data-bs-toggle="collapse"
-                      data-bs-target="FAQ2" aria-expanded="true" aria-controls="FAQ2">
+                    <button class="accordion-button bg-primary text-white collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#FAQ2" aria-expanded="false" aria-controls="FAQ2">
                       Ada apa saja si jurusan nya?
                     </button>
                   </h2>
-                  <div id="FAQ2" class="accordion-collap" aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample">
+                  <div id="FAQ2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       E-report IDN adalah sebuah platform yang memungkinkan pengguna untuk melaporkan masalah atau kejadian tertentu secara online. Platform ini dirancang untuk mempermudah proses pelaporan dan memastikan bahwa laporan dapat ditangani dengan cepat dan efisien.
                     </div>
@@ -203,13 +222,12 @@
             <div class="col">
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button class="accordion-button bg-primary text-white " type="button" data-bs-toggle="collapse"
-                      data-bs-target="FAQ" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="accordion-button bg-primary text-white collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#FAQ3" aria-expanded="false" aria-controls="FAQ3">
                       Kegiatan nya apa saja ya?
                     </button>
                   </h2>
-                  <div id="collapseOne" class="accordion-collap" aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample">
+                  <div id="FAQ3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       E-report IDN adalah sebuah platform yang memungkinkan pengguna untuk melaporkan masalah atau kejadian tertentu secara online. Platform ini dirancang untuk mempermudah proses pelaporan dan memastikan bahwa laporan dapat ditangani dengan cepat dan efisien.
                     </div>
@@ -219,13 +237,12 @@
             <div class="col">
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button class="accordion-button bg-primary text-white" type="button" data-bs-toggle="collapse"
-                      data-bs-target="FAQ" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="accordion-button bg-primary text-white collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#FAQ4" aria-expanded="false" aria-controls="FAQ4">
                       Seru tidak ya di IDN?
                     </button>
                   </h2>
-                  <div id="collapseOne" class="accordion-collap" aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample">
+                  <div id="FAQ4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       E-report IDN adalah sebuah platform yang memungkinkan pengguna untuk melaporkan masalah atau kejadian tertentu secara online. Platform ini dirancang untuk mempermudah proses pelaporan dan memastikan bahwa laporan dapat ditangani dengan cepat dan efisien.
                     </div>
@@ -234,14 +251,13 @@
             </div>
             <div class="col">
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button bg-primary text-white" type="button" data-bs-toggle="collapse"
-                      data-bs-target="FAQ" aria-expanded="true" aria-controls="collapseOne">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-primary text-white collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#FAQ5" aria-expanded="false" aria-controls="FAQ5">
                       IDN mengajar itu apa si?
                     </button>
                   </h2>
-                  <div id="collapseOne" class="accordion-collap" aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample">
+                  <div id="FAQ5" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       E-report IDN adalah sebuah platform yang memungkinkan pengguna untuk melaporkan masalah atau kejadian tertentu secara online. Platform ini dirancang untuk mempermudah proses pelaporan dan memastikan bahwa laporan dapat ditangani dengan cepat dan efisien.
                     </div>
@@ -250,14 +266,13 @@
             </div>
             <div class="col">
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button bg-primary text-white" type="button" data-bs-toggle="collapse"
-                      data-bs-target="FAQ" aria-expanded="true" aria-controls="collapseOne">
-                      Adurace itu apa ya?
+                  <h2 class="accordion-header">
+                    <button class="accordion-button bg-primary text-white collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#FAQ6" aria-expanded="false" aria-controls="FAQ6">
+                      Edurace itu apa ya?
                     </button>
                   </h2>
-                  <div id="collapseOne" class="accordion-collap" aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample">
+                  <div id="FAQ6" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                       E-report IDN adalah sebuah platform yang memungkinkan pengguna untuk melaporkan masalah atau kejadian tertentu secara online. Platform ini dirancang untuk mempermudah proses pelaporan dan memastikan bahwa laporan dapat ditangani dengan cepat dan efisien.
                     </div>
@@ -267,7 +282,66 @@
           </div>
         </div>
       </div>
-      </section>
+    </section>
+
+    <!-- footer section  -->
+    <footer id="contact" class="bg-primary text-white pt-5 pb-4 mt-5">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Kolom 1: Logo & Deskripsi -->
+          <div class="col-12 col-md-5">
+            <div class="d-flex align-items-center gap-2 mb-3">
+              <img class="rounded" src="./assets/images/idn.png" alt="Logo" width="40">
+              <h3 class="fw-bold mb-0">E-Report</h3>
+            </div>
+            <p class="text-white-50 pe-md-4" style="line-height: 1.6;">
+              Kami adalah tim pengembang E-Report IDN yang berkomitmen memberikan layanan pengaduan terbaik untuk seluruh civitas IDN Boarding School.
+            </p>
+          </div>
+
+          <!-- Kolom 2: Menu -->
+          <div class="col-12 col-md-3">
+            <h4 class="fw-bold mb-3">Menu</h4>
+            <ul class="list-unstyled d-flex flex-column gap-2 text-white-50">
+              <li><a href="#hero" class="text-white-50 text-decoration-none">Home</a></li>
+              <li><a href="#about" class="text-white-50 text-decoration-none">About</a></li>
+              <li><a href="#recent" class="text-white-50 text-decoration-none">Recent</a></li>
+              <li><a href="#faq" class="text-white-50 text-decoration-none">FAQ</a></li>
+              <li><a href="#contact" class="text-white-50 text-decoration-none">Contact Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Kolom 3: Contact Us -->
+          <div class="col-12 col-md-4">
+            <h4 class="fw-bold mb-3">Contact Us</h4>
+            <ul class="list-unstyled d-flex flex-column gap-3 text-white-50">
+              <li class="d-flex align-items-center gap-3">
+                <i class="fa-solid fa-envelope fs-5"></i>
+                <span>RakkyZ.T@idn.com</span>
+              </li>
+              <li class="d-flex align-items-center gap-3">
+                <i class="fa-solid fa-phone fs-5"></i>
+                <span>+62 877-3282-4169</span>
+              </li>
+              <li class="d-flex align-items-start gap-3">
+                <i class="fa-solid fa-location-dot fs-5 mt-1"></i>
+                <span>Jl. raya dayueh, Kota Bogor, Provinsi Jawa Barat</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="row mt-5 pt-3">
+          <div class="col text-center text-white-50">
+            <p class="mb-0">
+              &copy;copyright by <strong class="text-white">RPL class</strong> 2025, All right reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
     <!-- js bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
