@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-report IDN</title>
+    <link rel="icon" href="./assets/images.jfif" type="image/x-icon">
+
+    <!-- css bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* --- SIMPLE & SLEEK PRELOADER --- */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        .loader-wrapper {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+        }
+
+        .loader-ring {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: 2px solid #e2e8f0;
+            border-top: 2px solid #0d6efd;
+            border-radius: 50%;
+            animation: spinRing 1s linear infinite;
+        }
+
+        .loader-wrapper img {
+            width: 45px;
+            height: auto;
+            animation: softPulse 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes spinRing {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes softPulse {
+            0% {
+                transform: scale(0.95);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: scale(1.05);
+                opacity: 1;
+            }
+        }
+
+        .preloader-hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="loader-wrapper">
+            <div class="loader-ring"></div>
+            <img src="./assets/images/idn.png" alt="IDN Logo">
+        </div>
+    </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary-subtle py-4 sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="./assets/images/idn.png" alt="Logo" width="40" class="d-inline-block align-text-top">
+                <span class="fw-bold text-primary-emphasis">E-report IDN</span>
+            </a>
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-3 pt-4 pt-lg-0 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="index.html">Recent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="index.html">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-primary" href="index.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- content -->
+    <div class="container my-5">
+        <div class="row g-4">
+            <div class="col-8">
+                <h1 class="fw-bold text-primary-emphasis">Laporan Fasilitas Keran Masjid Rusak</h1>
+                <p class="text-secondary">By <a class="text-decoration-none" href="">Rakky</a> | 100 Tahun yang
+                    lalu.</p>
+
+                <div class="mb-4" style="height: 400px; overflow: hidden">
+                    <img src="./assets/images/masjid.jfif" class="img-fluid rounded-3 shadow-sm" alt="Post Image" />
+                </div>
+
+                <p class="lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, minima iusto omnis
+                    voluptatum cum</p>
+
+                <blockquote class="border-start border-3 border-primary p-3 my-3 text-secondary">Lorem ipsum dolor sit
+                    amet consec</blockquote>
+
+                <p class="lh-lg">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae dolore aliquid odit vitae? Cum
+                    impedit voluptat
+                    dignissimos, omnis eius.
+                </p>
+
+                <hr>
+                <h5 class="fw-bold text-primary">Komentar</h5>
+                <form action="">
+                    <div class="mb-3">
+                        <textarea class="form-control" id="comment" rows="3"></textarea>
+                    </div>
+                    <button class="btn btn-primary px-4">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+   <!-- sidebar -->
+<div class="col-4">
+    <!-- Breadcrumb -->
+    <nav class="mt-2 mb-4" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="reports.html">All Reports</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Keran Masjid Rusak</li>
+        </ol>
+    </nav>
+
+    <!-- Recent Report Card -->
+    <div class="card mb-4">
+        <div class="card-header fw-bold fs-5 bg-light">
+            Recent Report
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex align-items-center py-3">
+                <span class="text-primary fw-bold me-3">&gt;</span>
+                <span>Laporan kamar mandi</span>
+            </li>
+            <li class="list-group-item d-flex align-items-center py-3">
+                <span class="text-primary fw-bold me-3">&gt;</span>
+                <span>Laporan Air mati</span>
+            </li>
+            <li class="list-group-item d-flex align-items-center py-3">
+                <span class="text-primary fw-bold me-3">&gt;</span>
+                <span>Laporan Listrik Lemah</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Kategori Card -->
+    <div class="card">
+        <div class="card-header fw-bold fs-5 bg-light">
+            Kategori
+        </div>
+        <div class="card-body">
+            <span class="badge bg-primary fs-6 px-3 py-2 me-2">Report</span>
+            <span class="badge bg-success fs-6 px-3 py-2">Fasilitas</span>
+        </div>
+    </div>
+</div>
+
+
+    <!-- footer section  -->
+    <footer id="contact" class="bg-primary text-white pt-5 pb-4 mt-5">
+        <div class="container">
+            <div class="row g-4" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-12 col-md-5">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <img class="rounded" src="./assets/images/idn.png" alt="Logo" width="40">
+                        <h3 class="fw-bold mb-0">E-Report</h3>
+                    </div>
+                    <p class="text-white-50 pe-md-4" style="line-height: 1.6;">
+                        Kami adalah tim pengembang E-Report IDN yang berkomitmen memberikan layanan
+                        pengaduan terbaik
+                        untuk seluruh civitas IDN Boarding School.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-3">
+                    <h4 class="fw-bold mb-3">Menu</h4>
+                    <ul class="list-unstyled d-flex flex-column gap-2 text-white-50">
+                        <li><a href="#hero" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li><a href="#about" class="text-white-50 text-decoration-none">About</a>
+                        </li>
+                        <li><a href="#recent" class="text-white-50 text-decoration-none">Recent</a>
+                        </li>
+                        <li><a href="#faq" class="text-white-50 text-decoration-none">FAQ</a></li>
+                        <li><a href="#contact" class="text-white-50 text-decoration-none">Contact
+                                Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <h4 class="fw-bold mb-3">Contact Us</h4>
+                    <ul class="list-unstyled d-flex flex-column gap-3 text-white-50">
+                        <li class="d-flex align-items-center gap-3">
+                            <i class="fa-solid fa-envelope fs-5"></i>
+                            <span>RakkyZ.T@idn.com</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-3">
+                            <i class="fa-solid fa-phone fs-5"></i>
+                            <span>+62 877-3282-4169</span>
+                        </li>
+                        <li class="d-flex align-items-start gap-3">
+                            <i class="fa-solid fa-location-dot fs-5 mt-1"></i>
+                            <span>Jl. raya dayueh, Kota Bogor, Provinsi Jawa Barat</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mt-5 pt-3">
+                <div class="col text-center text-white-50">
+                    <p class="mb-0">
+                        &copy;copyright by <strong class="text-white">RPL class</strong> 2025, All
+                        right reserved
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+        crossorigin="anonymous"></script>
+
+    <!-- AOS JS & Init Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // INISIALISASI AOS BERULANG KALI
+        AOS.init({
+            once: false,  // false = animasi dipicu ulang saat di-scroll
+            mirror: true  // true = animasi berjalan kembali saat di-scroll ke atas
+        });
+
+        // Menghilangkan Preloader saat website selesai di-load
+        window.addEventListener('load', function () {
+            const preloader = document.getElementById('preloader');
+            setTimeout(function () {
+                preloader.classList.add('preloader-hidden');
+            }, 500);
+        });
+    </script>
+</body>
+
+</html>
